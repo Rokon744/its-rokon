@@ -32,7 +32,7 @@ const Skills = () => {
       <div className="pb-20 flex justify-center">
         <div className="max-w-7xl w-full px-4">
           <p className="text-2xl header-text text-center mb-8">
-            I'm using to create a clean website:
+            I&apos;m using to create a clean website:
           </p>
           <div className="flex flex-wrap justify-between">
             <ProgressItem title="HTML5" progress="90%" className="i1" />

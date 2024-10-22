@@ -2,15 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Eurostile";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Eurostile"), url("./fonts/eurostile.woff") format("woff");
+}
+.header-text{
+  font-family: "Eurostile", sans-serif;
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
+    --hover-color: #19f5d7;
   }
 }
 
@@ -27,7 +38,7 @@ body {
 
 @media (max-width: 1024px) {
   .nav-item {
-    font-size: 34px !important;
+    font-size: 30px !important;
   }
   .aws-btn--medium {
     width: auto !important;
@@ -38,65 +49,25 @@ body {
   transition: all ease 0.3s;
 }
 .nav-item:hover {
-  color: #6bff26;
+  color: var(--hover-color);
 }
-
+.social-media {
+  position: fixed;
+  bottom: 20px;
+}
 .social-media a {
   padding: 10px;
   border-radius: 50%;
   border: 1px solid #383632;
   font-size: 20px;
-  transition: all ease .2s;
+  transition: all ease 0.2s;
 }
-.social-media a:hover{
+.social-media a:hover {
   transform: scale(1.2);
-  color: #6bff26;
+  color: var(--hover-color);
   background: rgb(110, 110, 110);
+  rotate: 360deg;
 }
-
-/* .btn-social::before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-  position: absolute;
-  top: -2px;
-  left:-2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity .3s ease-in-out;
-  border-radius: 10px;
-}
-.btn-social:active {
-  color: #000
-}
-.btn-social:active:after {
-  background: transparent;
-}
-.btn-social:hover:before {
-  opacity: 1;
-}
-.btn-social:after {
-  z-index: -1;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #111;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
-
-@keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
-} */
-
 
 /* Awesome Button Custom Css */
 .aws-btn__content {

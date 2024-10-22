@@ -14,15 +14,23 @@ const changa = Changa({ subsets: ['latin'] })
 
 const Hero = () => {
     return (
-        <section className='min-h-screen flex justify-center items-center'>
+        <section className='min-h-[1000px] flex justify-center items-center'>
             <div className="container">
-                <h1 className={`text-6xl text-center ${changa.className}`}>
-                    <span className='text-[#6bff26]'>{"</>"} </span>
+                <h1 className={`text-3xl md:text-6xl text-center header-text font-semibold`}>
                     Frontend Web Developer
-                    <span className='text-[#6bff26]'> {"</>"}</span></h1>
-                <p className='text-center text-xl mt-5'>I design and code beautifully simple things, and I love what I do.</p>
+                </h1>
+                <h1 className={`text-3xl md:text-6xl text-center ${changa.className}`}>
+                    <span className='text-[#19f5d7]'>{"</>"} </span>
+                </h1>
+                <p className='text-center text-base md:text-lg mt-5'>I design and code beautifully simple things, and I love what I do.</p>
                 <Image src={me} width={300} height={300} className='rounded-full m-auto pt-14' alt='me' />
-                <div className='flex justify-center items-center gap-5 social-media pt-10'>
+                {/* <div className='flex justify-center items-center gap-3 social-media pt-10'>
+                    <Link className='btn-social' href="https://github.com/Rokon744" target='_blank'>
+                        <FaGithub />
+                    </Link>
+                    <Link className='btn-social' href="https://www.linkedin.com/in/md-rokon-8b8b8029a/" target='_blank'>
+                        <FaLinkedinIn />
+                    </Link>
                     <Link className='btn-social' href="https://www.facebook.com/DevRokon/" target='_blank'>
                         <FaFacebookF />
                     </Link>
@@ -32,15 +40,7 @@ const Hero = () => {
                     <Link className='btn-social' href="https://x.com/rokon_dev" target='_blank'>
                         <FaTwitter />
                     </Link>
-                    <Link className='btn-social' href="https://www.linkedin.com/in/md-rokon-8b8b8029a/" target='_blank'>
-                        <FaLinkedinIn />
-                    </Link>
-                    <Link className='btn-social' href="https://github.com/Rokon744" target='_blank'>
-                        <FaGithub />
-                    </Link>
-                </div>
-                <div className='flex justify-center items-center gap-5 social-media pt-5'>
-                </div>
+                </div> */}
             </div>
         </section>
     )

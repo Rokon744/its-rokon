@@ -5,6 +5,7 @@ import { Changa } from 'next/font/google'
 import { AwesomeButton } from 'react-awesome-button'
 import 'react-awesome-button/dist/styles.css';
 import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross1 } from "react-icons/rx";
 
 const changa = Changa({ subsets: ['latin'] })
 
@@ -12,10 +13,10 @@ const Header = () => {
     const [openMenu, setOpenMenu] = useState(false)
 
     return (
-        <header className={`bg-[#383632] h-[7vh] fixed w-full z-50`}>
+        <header className={`bg-[#383632] h-[70px] fixed w-full z-50`}>
             <nav className='flex justify-between items-center !py-3 container'>
                 <Link href={"/"} className="logo">
-                    <h2 className={`text-4xl ${changa.className}`}>Rokon</h2>
+                    <h2 className={`text-4xl text-[#19f5d7] ${changa.className}`}>Rokon</h2>
                 </Link>
                 <ul className="nav-itens flex items-center gap-10 max-lg:hidden">
                     <li>
@@ -37,12 +38,19 @@ const Header = () => {
                         type="primary"
                         className='px-10 py-2'
                     >
-                        <Link href={"#contact"} className='nav-item px-10 py-2'>Say Hi</Link>
+                        <Link href={"#contact"} className='nav-item px-10 py-2 text-black'>Say Hi</Link>
                     </AwesomeButton>
                 </ul>
-                <button className='text-3xl lg:hidden' onClick={() => setOpenMenu(!openMenu)}>
-                    <RxHamburgerMenu />
-                </button>
+                {!openMenu &&
+                    <button className='text-3xl lg:hidden' onClick={() => setOpenMenu(true)}>
+                        <RxHamburgerMenu />
+                    </button>
+                }
+                {openMenu &&
+                    <button className='text-3xl lg:hidden' onClick={() => setOpenMenu(false)}>
+                        <RxCross1 />
+                    </button>
+                }
             </nav>
             <div className={`${openMenu ? 'w-full' : 'w-0'} overflow-hidden transition-all duration-300 h-[93vh] bg-[#383632]`}>
                 <ul className="nav-itens flex flex-col items-center justify-center gap-10 mt-[-30px] lg:hidden h-full">

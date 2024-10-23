@@ -17,7 +17,7 @@ const Projects = () => {
                     Projects
                 </h1>
                 <p className="text-2xl header-text text-center mt-5 mb-0 max-w-[1000px] mx-auto">
-                    I have completed many projects in the marketplace and out of marketplace. Here are a few past design projects I've worked on. Want to see more? <a href="mailto: roknujjamanripon@gmail.com" className='text-[#19f5d7] underline'>Email me</a>.
+                    I have completed many projects in the marketplace and out of marketplace. Here are a few past design projects I&apos;ve worked on. Want to see more? <a href="mailto: roknujjamanripon@gmail.com" className='text-[#19f5d7] underline'>Email me</a>.
                 </p>
                 <div className="projects-inner py-20">
                     <div className="lg:flex justify-center gap-16 items-center lg:pb-40 pb-20">
@@ -83,7 +83,7 @@ const Projects = () => {
                                 Restaurant (NEXT JS)
                             </h3>
                             <p className='text-base md:text-lg mt-5 max-w-[400px] m-auto max-lg:text-center'>
-                                This is the client project, so I can't show you the source code. I'm really sorry for that.
+                                This is the client project, so I can&apos;t show you the source code. I&apos;m really sorry for that.
                             </p>
                             <div className="link-section pt-10 flex justify-between items-center max-lg:max-w-[300px] max-lg:m-auto">
                                 <button>

@@ -41,7 +41,7 @@ const Services = () => {
                                 type="primary"
                                 className='px-10 py-2'
                             >
-                                <Link href={"#contact"} className='nav-item px-10 py-2 text-black'>Hire Me</Link>
+                                <Link href={"#contact"} className='hover:text-white px-10 py-2 text-black'>Hire Me</Link>
                             </AwesomeButton>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ const Services = () => {
                                 type="primary"
                                 className='px-10 py-2'
                             >
-                                <Link href={"#contact"} className='nav-item px-10 py-2 text-black'>Hire Me</Link>
+                                <Link href={"#contact"} className='hover:text-white px-10 py-2 text-black'>Hire Me</Link>
                             </AwesomeButton>
                         </div>
                     </div>
@@ -104,7 +104,7 @@ const Services = () => {
                                 type="primary"
                                 className='px-10 py-2'
                             >
-                                <Link href={"#contact"} className='nav-item px-10 py-2 text-black'>Hire Me</Link>
+                                <Link href={"#contact"} className='hover:text-white px-10 py-2 text-black'>Hire Me</Link>
                             </AwesomeButton>
                         </div>
                     </div>

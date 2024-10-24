@@ -3,7 +3,6 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { Changa } from 'next/font/google'
 import { AwesomeButton } from 'react-awesome-button'
-// import 'react-awesome-button/dist/styles.css';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
 

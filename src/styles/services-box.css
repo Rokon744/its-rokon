@@ -1,0 +1,33 @@
+
+
+
+.services-card{
+    position: relative;
+    overflow: hidden;
+}
+.services-card::before{
+    position: absolute;
+    content: "";
+    background: radial-gradient(var(--clr), transparent, transparent);
+    width: 900px;
+    height: 900px;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s, top 0s, left 0s;
+}
+.services-card:hover::before{
+    opacity: 1;
+}
+.services-card::after{
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+}
+.services-card .services-card-body{
+    position: relative;
+    z-index: 1;
+}

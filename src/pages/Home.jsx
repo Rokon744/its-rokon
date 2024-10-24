@@ -4,7 +4,9 @@ import Hero from '@/components/home/Hero'
 import Projects from '@/components/home/Projects'
 import Services from '@/components/home/Services'
 import React from 'react'
-import "../styles/styles.css"
+// import 'react-awesome-button/dist/styles.css';
+import "../styles/react-awesome-button.css"
+import Testimonial from '@/components/home/Testimonial'
 
 const Home = () => {
   return (
@@ -14,6 +16,7 @@ const Home = () => {
       <About />
       <Services />
       <Projects />
+      <Testimonial />
     </div>
   )
 }

@@ -4,6 +4,7 @@ import Hero from '@/components/home/Hero'
 import Projects from '@/components/home/Projects'
 import Services from '@/components/home/Services'
 import React from 'react'
+import "../styles/styles.css"
 
 const Home = () => {
   return (

@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import React from 'react'
 import { AwesomeButton } from 'react-awesome-button'
-import 'react-awesome-button/dist/styles.css';
+// import 'react-awesome-button/dist/styles.css';
 
 
 const Services = () => {

@@ -27,7 +27,7 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--background) fixed;
   font-family: Arial, Helvetica, sans-serif;
 }
 .container {
@@ -51,10 +51,10 @@ body {
 .nav-item:hover {
   color: var(--hover-color);
 }
-.social-media {
+/* .social-media {
   position: fixed;
   bottom: 20px;
-}
+} */
 .social-media a {
   padding: 10px;
   border-radius: 50%;

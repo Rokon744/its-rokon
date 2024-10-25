@@ -7,6 +7,7 @@ import React from 'react'
 // import 'react-awesome-button/dist/styles.css';
 import "../styles/react-awesome-button.css"
 import Testimonial from '@/components/home/Testimonial'
+import Contact from '@/components/home/Contact'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Services />
       <Projects />
       <Testimonial />
+      <Contact />
     </div>
   )
 }

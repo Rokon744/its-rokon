@@ -19,19 +19,19 @@ const data = [
     // },
     {
         id: 4,
-        name: "Nicky",
+        name: "Nicky (Bulgaria)",
         review: "One again - amazing work. I will surely continue working with the developer.",
         image: nicky
     },
     {
         id: 2,
-        name: "Lakhlaifi",
+        name: "Lakhlaifi (UK)",
         review: "Great job, very happy with the work. Was creative and did everything perfectly.",
         image: lakhlaifi
     },
     {
         id: 3,
-        name: "Omen",
+        name: "Omen (UK)",
         review: "Very good work, positive results. Will be working with again, exceeded all expectations.",
         image: omen
     }
@@ -40,7 +40,7 @@ const data = [
 function ReviewSlider() {
     var settings = {
         autoplay: true,
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -57,15 +57,15 @@ function ReviewSlider() {
                             <h4 className="text-xl header-text tracking-wider font-semibold text-center mt-2">{item.name}</h4>
                         </div>
                         <div className="slider-body">
-                            <p className='text-center text-base md:text-lg mt-5 max-w-[1000px] m-auto'>
+                            <p className='text-center italic tracking-widest mt-5'>
                                 {item.review}
                             </p>
                             <div className="flex justify-center items-center gap-1 mt-2">
-                                <FaStar className="text-[#ffb33e] text-[20px]" />
-                                <FaStar className="text-[#ffb33e] text-[20px]" />
-                                <FaStar className="text-[#ffb33e] text-[20px]" />
-                                <FaStar className="text-[#ffb33e] text-[20px]" />
-                                <FaStar className="text-[#ffb33e] text-[20px]" />
+                                <FaStar className="text-[#ffb33e] text-[16px]" />
+                                <FaStar className="text-[#ffb33e] text-[16px]" />
+                                <FaStar className="text-[#ffb33e] text-[16px]" />
+                                <FaStar className="text-[#ffb33e] text-[16px]" />
+                                <FaStar className="text-[#ffb33e] text-[16px]" />
                             </div>
                         </div>
                     </div>

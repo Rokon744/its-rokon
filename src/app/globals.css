@@ -8,7 +8,7 @@
   font-weight: normal;
   src: local("Eurostile"), url("./fonts/eurostile.woff") format("woff");
 }
-.header-text{
+.header-text {
   font-family: "Eurostile", sans-serif;
 }
 
@@ -72,4 +72,40 @@ body {
 /* Awesome Button Custom Css */
 .aws-btn__content {
   padding: 0 !important;
+}
+
+/* SLick slider Start */
+
+.slick-next::before {
+  content: "➔" !important;
+}
+.slick-prev::before {
+  content: "➔" !important;
+}
+
+@media (max-width: 762px) {
+  .slick-prev:before,
+  .slick-next::before {
+    content: "" !important;
+  }
+  .slick-dots li button::before {
+    color: aqua !important;
+    font-size: 10px !important;
+  }
+  .slick-dots .slick-active button::before {
+    font-size: 15px !important;
+  }
+  .slick-dots li {
+    margin: 0 !important;
+  }
+}
+.slick-prev {
+  rotate: 180deg;
+  margin-top: 3px;
+  transform: translateX(-30px) !important;
+  left: 0 !important;
+  z-index: 1;
+}
+.slick-next {
+  transform: translateX(-50px) !important;
 }

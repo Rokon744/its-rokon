@@ -32,7 +32,7 @@ const Services = () => {
     }, []);
 
     return (
-        <section className='services'>
+        <section className='services pt-28' id='services'>
             <div className="container">
                 <h1 className={`text-3xl md:text-5xl text-center header-text font-semibold tracking-wider`}>
                     Services
@@ -40,7 +40,7 @@ const Services = () => {
                 <p className="text-2xl header-text text-center mt-5 mb-0">
                     What services do I provide you
                 </p>
-                <div ref={cardRef} className="services-inner py-20 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 max-xl:space-y-5 xl:gap-5">
+                <div ref={cardRef} className="services-inner pt-20 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 max-xl:space-y-5 xl:gap-5">
                     <div style={{"--clr":"#0f0"}} className="services-card overflow-hidden border border-gray-800 rounded-xl py-10 px-5 md:px-10 bg-black text-white text-center">
                         {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains" /> */}
                         <div className="px-6 py-4 services-card-body">

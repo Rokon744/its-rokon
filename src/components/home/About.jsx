@@ -6,7 +6,7 @@ const heebo = Heebo({ subsets: ['latin'] })
 
 const About = () => {
     return (
-        <section className='about min-h-[800px] pt-20'>
+        <section className='about min-h-[600px] pt-28' id='about'>
             <div className="container">
                 <div className="about-left">
                     <h1 className={`text-3xl md:text-5xl text-center header-text font-semibold tracking-wide pb-5`}>

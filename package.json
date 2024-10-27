@@ -11,6 +11,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "antd": "^5.21.4",
+    "flowbite": "^2.5.2",
     "next": "14.2.15",
     "react": "^18",
     "react-awesome-button": "^7.0.5",

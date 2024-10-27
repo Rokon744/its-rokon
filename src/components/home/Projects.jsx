@@ -11,7 +11,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
     return (
-        <section className='pt-12'>
+        <section className='pt-28' id='projects'>
             <div className="container">
                 <h1 className={`text-3xl md:text-5xl text-center header-text font-semibold tracking-wider`}>
                     Projects
@@ -19,7 +19,7 @@ const Projects = () => {
                 <p className="text-2xl header-text text-center mt-5 mb-0 max-w-[1000px] mx-auto">
                     I have completed many projects in the marketplace and out of marketplace. Here are a few past design projects I&apos;ve worked on. Want to see more? <a href="mailto: roknujjamanripon@gmail.com" className='text-[#19f5d7] underline'>Email me</a>.
                 </p>
-                <div className="projects-inner py-20">
+                <div className="projects-inner pt-20 pb-10">
                     <div className="lg:flex justify-center gap-16 items-center lg:pb-40 pb-20">
                         <div className='project-image max-lg:pb-10 max-lg:flex justify-center'>
                             <Image src={fazshop} alt='fazshop' />

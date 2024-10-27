@@ -3,7 +3,7 @@ import ReviewSlider from './ReviewSlider';
 
 const Testimonial = () => {
   return (
-    <section className='testimonials py-20'>
+    <section className='testimonials pt-28' id='testimonial'>
       <div className="container">
         <h1 className={`text-3xl md:text-5xl text-center header-text font-semibold tracking-wider`}>
           Testimonial

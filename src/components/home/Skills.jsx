@@ -29,7 +29,7 @@ const Skills = () => {
 
   return (
     <div className="font-nunito">
-      <div className="pb-20 flex justify-center">
+      <div className="flex justify-center">
         <div className="max-w-7xl w-full px-4">
           <p className="text-2xl header-text text-center mb-8">
             I&apos;m using to create a clean website:

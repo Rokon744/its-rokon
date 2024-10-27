@@ -24,6 +24,9 @@
     --hover-color: #19f5d7;
   }
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   color: var(--foreground);

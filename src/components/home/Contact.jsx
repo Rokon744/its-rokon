@@ -38,10 +38,10 @@ const Contact = () => {
     return (
         <section className='py-28' id='contact'>
             <div className="container">
-                <h1 className='text-3xl md:text-5xl text-center header-text font-semibold tracking-wider'>
+                <h1 data-aos="fade-up" className='text-3xl md:text-5xl text-center header-text font-semibold tracking-wider'>
                     Get In Touch
                 </h1>
-                <div className='flex justify-center items-center gap-3 social-media pt-5'>
+                <div data-aos="fade-up" data-aos-delay="300" className='flex justify-center items-center gap-3 social-media pt-5'>
                     <Link className='btn-social' href="https://github.com/Rokon744" target='_blank'>
                         <FaGithub />
                     </Link>
@@ -58,7 +58,7 @@ const Contact = () => {
                         <FaTwitter />
                     </Link>
                 </div>
-                <form ref={form} onSubmit={sendEmail} action="#" className='flex flex-col gap-5 py-20 max-w-[600px] m-auto'>
+                <form data-aos="fade-up" data-aos-delay="800" ref={form} onSubmit={sendEmail} action="#" className='flex flex-col gap-5 py-20 max-w-[600px] m-auto'>
                     <input type="text" name='name' placeholder='Name' className='outline-none p-3 italic bg-transparent border-b' required />
                     <input type="email" name='email' placeholder='Email' className='outline-none p-3 italic bg-transparent border-b' required />
                     <textarea name="message" cols={5} rows={6} placeholder='Type Your Message' className='outline-none p-3 italic bg-transparent border' required ></textarea>

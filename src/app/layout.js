@@ -1,7 +1,8 @@
-import { Montserrat } from 'next/font/google'
+import { Montserrat } from "next/font/google";
 import "./globals.css";
+import Circles from "@/components/Circles";
 
-const roboto = Montserrat({ subsets: ['latin'], weight:['400'] })
+const roboto = Montserrat({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata = {
   title: "Dev Rokon",
@@ -11,10 +12,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${roboto.className}`}
-      >
+      <body className={`${roboto.className} wrapper`}>
         {children}
+
+        <ul className="animate-bg">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <Circles />
       </body>
     </html>
   );

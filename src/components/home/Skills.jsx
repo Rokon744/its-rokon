@@ -31,10 +31,10 @@ const Skills = () => {
     <div className="font-nunito">
       <div className="flex justify-center">
         <div className="max-w-7xl w-full px-4">
-          <p className="text-2xl header-text text-center mb-8">
+          <p data-aos="fade-up" className="text-2xl header-text text-center mb-8">
             I&apos;m using to create a clean website:
           </p>
-          <div className="flex flex-wrap justify-between">
+          <div data-aos="fade-up" data-aos-delay="300" className="flex flex-wrap justify-between">
             <ProgressItem title="HTML5" progress="90%" className="i1" />
             <ProgressItem title="CSS3" progress="85%" className="i2" />
             <ProgressItem title="JAVASCRIPT (ES6+)" progress="70%" className="i3" />

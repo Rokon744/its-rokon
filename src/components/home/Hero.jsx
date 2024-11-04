@@ -16,14 +16,14 @@ const Hero = () => {
     return (
         <section className='min-h-[1000px] flex justify-center items-center'>
             <div className="container">
-                <h1 className={`text-3xl md:text-6xl text-center header-text font-semibold`}>
+                <h1 data-aos="fade-up" className={`text-3xl md:text-6xl text-center header-text font-semibold`}>
                     Frontend Web Developer
                 </h1>
-                <h1 className={`text-3xl md:text-6xl text-center ${changa.className}`}>
+                <h1 data-aos="fade-up" className={`text-3xl md:text-6xl text-center ${changa.className}`}>
                     <span className='text-[#19f5d7]'>{"</>"} </span>
                 </h1>
-                <p className='text-center text-base md:text-lg mt-5'>I design and code beautifully simple things, and I love what I do.</p>
-                <Image src={me} width={300} height={300} className='rounded-full m-auto pt-14' alt='me' />
+                <p data-aos="fade-up" data-aos-delay="300" className='text-center text-base md:text-lg mt-5'>I design and code beautifully simple things, and I love what I do.</p>
+                <Image data-aos="fade-up" data-aos-delay="500" src={me} width={300} height={300} className='rounded-full m-auto pt-14' alt='me' />
                 {/* <div className='flex justify-center items-center gap-3 social-media pt-10'>
                     <Link className='btn-social' href="https://github.com/Rokon744" target='_blank'>
                         <FaGithub />

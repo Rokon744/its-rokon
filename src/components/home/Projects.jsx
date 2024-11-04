@@ -13,18 +13,18 @@ const Projects = () => {
     return (
         <section className='pt-28' id='projects'>
             <div className="container">
-                <h1 className={`text-3xl md:text-5xl text-center header-text font-semibold tracking-wider`}>
+                <h1 data-aos="fade-up" className={`text-3xl md:text-5xl text-center header-text font-semibold tracking-wider`}>
                     Projects
                 </h1>
-                <p className="text-2xl header-text text-center mt-5 mb-0 max-w-[1000px] mx-auto">
+                <p data-aos="fade-up" data-aos-delay="200" className="text-2xl header-text text-center mt-5 mb-0 max-w-[1000px] mx-auto">
                     I have completed many projects in the marketplace and out of marketplace. Here are a few past design projects I&apos;ve worked on. Want to see more? <a href="mailto: roknujjamanripon@gmail.com" className='text-[#19f5d7] underline'>Email me</a>.
                 </p>
                 <div className="projects-inner pt-20 pb-10">
                     <div className="lg:flex justify-center gap-16 items-center lg:pb-40 pb-20">
-                        <div className='project-image max-lg:pb-10 max-lg:flex justify-center'>
+                        <div data-aos="fade-up" className='project-image max-lg:pb-10 max-lg:flex justify-center'>
                             <Image src={fazshop} alt='fazshop' />
                         </div>
-                        <div>
+                        <div data-aos="fade-up" data-aos-delay="300">
                             <h3 className={`text-xl md:text-2xl header-text font-semibold tracking-wider max-lg:text-center`}>
                                 Ecommerce (REACT JS)
                             </h3>
@@ -48,10 +48,10 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="lg:flex justify-center gap-16 items-center lg:pb-40 pb-20">
-                        <div className='project-image max-lg:pb-10 max-lg:flex justify-center'>
+                        <div data-aos="fade-up" className='project-image max-lg:pb-10 max-lg:flex justify-center'>
                             <Image src={fazedu} alt='fazedu' />
                         </div>
-                        <div>
+                        <div data-aos="fade-up" data-aos-delay="300">
                             <h3 className={`text-xl md:text-2xl header-text font-semibold tracking-wider max-lg:text-center`}>
                                 Educational (REACT JS)
                             </h3>
@@ -75,10 +75,10 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className="lg:flex justify-center gap-16 items-center">
-                        <div className='project-image max-lg:pb-10 max-lg:flex justify-center'>
+                        <div data-aos="fade-up" className='project-image max-lg:pb-10 max-lg:flex justify-center'>
                             <Image src={restaurant} alt='fazshop' />
                         </div>
-                        <div>
+                        <div data-aos="fade-up" data-aos-delay="300">
                             <h3 className={`text-xl md:text-2xl header-text font-semibold tracking-wider max-lg:text-center`}>
                                 Restaurant (NEXT JS)
                             </h3>

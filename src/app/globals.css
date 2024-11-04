@@ -8,6 +8,18 @@
   font-weight: normal;
   src: local("Eurostile"), url("./fonts/eurostile.woff") format("woff");
 }
+header {
+  background: rgba(0, 0, 0, 0.54);
+  backdrop-filter: blur(5px);
+  box-shadow: -1px 1px 20px 0px #3a3a3a;
+}
+@media (max-width: 768px) {
+  .mobile-menu {
+    background: rgba(0, 0, 0, 0.54);
+    backdrop-filter: blur(5px);
+  }
+}
+
 .header-text {
   font-family: "Eurostile", sans-serif;
 }
@@ -24,14 +36,74 @@
     --hover-color: #19f5d7;
   }
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
   color: var(--foreground);
-  background: var(--background) fixed;
+  background: var(--background);
+  /* background-size: cover;
+  background-position: 50px 0; */
   font-family: Arial, Helvetica, sans-serif;
+}
+.animate-bg li {
+  z-index: -1;
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  list-style: none;
+  opacity: 0;
+  filter: blur(5px);
+  background: radial-gradient(deepskyblue, transparent, transparent) fixed;
+  bottom: 0;
+  left: 10vw;
+  animation: animate 10s linear infinite;
+}
+.animate-bg li:nth-child(2) {
+  left: 37vw;
+  animation-delay: 2s;
+}
+.animate-bg li:nth-child(3) {
+  left: 25vw;
+  animation-delay: 4s;
+}
+.animate-bg li:nth-child(4) {
+  left: 60vw;
+  animation-delay: 6s;
+}
+.animate-bg li:nth-child(5) {
+  left: 75vw;
+  animation-delay: 8s;
+}
+.animate-bg li:nth-child(6) {
+  left: 50vw;
+  animation-delay: 10s;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(10);
+    opacity: 0;
+    bottom: 100vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999;
+  }
 }
 .container {
   max-width: 1440px;

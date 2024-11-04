@@ -42,8 +42,8 @@ const Circles = () => {
           circle.style.transform = `scale(${(circlesRef.current.length - index) / circlesRef.current.length})`;
 
           const nextCircle = circlesRef.current[index + 1] || circlesRef.current[0];
-          x += (nextCircle.x - x) * 0.3;
-          y += (nextCircle.y - y) * 0.3;
+          x += (nextCircle.x - x) * 0.4;
+          y += (nextCircle.y - y) * 0.4;
 
           circle.x = x;
           circle.y = y;

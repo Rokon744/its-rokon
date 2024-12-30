@@ -15,14 +15,14 @@ export default function RootLayout({ children }) {
       <body className={`${roboto.className} wrapper`}>
         {children}
 
-        <ul className="animate-bg">
+        {/* <ul className="animate-bg">
           <li></li>
           <li></li>
           <li></li>
           <li></li>
           <li></li>
           <li></li>
-        </ul>
+        </ul> */}
         <Circles />
       </body>
     </html>

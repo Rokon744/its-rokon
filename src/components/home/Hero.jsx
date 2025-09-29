@@ -14,7 +14,7 @@ const changa = Changa({ subsets: ['latin'] })
 
 const Hero = () => {
     return (
-        <section className='min-h-[1000px] flex justify-center items-center'>
+        <section className='pt-24 md:pt-40 flex justify-center items-center'>
             <div className="container">
                 <h1 data-aos="fade-up" className={`text-3xl md:text-6xl text-center header-text font-semibold`}>
                     Frontend Web Developer
@@ -23,7 +23,7 @@ const Hero = () => {
                     <span className='text-[#19f5d7]'>{"</>"} </span>
                 </h1>
                 <p data-aos="fade-up" data-aos-delay="300" className='text-center text-base md:text-lg mt-5'>I design and code beautifully simple things, and I love what I do.</p>
-                <Image data-aos="fade-up" data-aos-delay="500" src={me} width={500} height={500} className='rounded-b-full m-auto pt-14' alt='me' />
+                <Image data-aos="fade-up" data-aos-delay="500" src={me} width={500} height={500} className='rounded-b-full m-auto' alt='me' />
                 {/* <div className='flex justify-center items-center gap-3 social-media pt-10'>
                     <Link className='btn-social' href="https://github.com/Rokon744" target='_blank'>
                         <FaGithub />

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import me from "../../assets/me.jpg"
+import me from "../../assets/me1.png"
 import { Changa } from 'next/font/google'
 import Link from 'next/link'
 import { FaFacebookF } from "react-icons/fa";
@@ -23,7 +23,7 @@ const Hero = () => {
                     <span className='text-[#19f5d7]'>{"</>"} </span>
                 </h1>
                 <p data-aos="fade-up" data-aos-delay="300" className='text-center text-base md:text-lg mt-5'>I design and code beautifully simple things, and I love what I do.</p>
-                <Image data-aos="fade-up" data-aos-delay="500" src={me} width={300} height={300} className='rounded-full m-auto pt-14' alt='me' />
+                <Image data-aos="fade-up" data-aos-delay="500" src={me} width={500} height={500} className='rounded-b-full m-auto pt-14' alt='me' />
                 {/* <div className='flex justify-center items-center gap-3 social-media pt-10'>
                     <Link className='btn-social' href="https://github.com/Rokon744" target='_blank'>
                         <FaGithub />

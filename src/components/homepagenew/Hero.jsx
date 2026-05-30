@@ -170,7 +170,7 @@ export default function Hero() {
           className="font-body text-base sm:text-lg max-w-xl mx-auto mb-10"
           style={{ color: "rgba(255,255,255,0.4)", lineHeight: 1.7 }}
         >
-          Hi, I'm <strong className="text-white">Rokon</strong> — a full-stack
+          Hi, I&apos;m <strong className="text-white">Rokon</strong> — a full-stack
           engineer crafting high-performance web applications with React,
           Next.js & Node.js from Bangladesh.
         </p>
@@ -197,7 +197,7 @@ export default function Hero() {
                 ?.scrollIntoView({ behavior: "smooth" })
             }
           >
-            <Mail size={16} /> Let's Connect
+            <Mail size={16} /> Let&apos;s Connect
           </button>
         </div>
 

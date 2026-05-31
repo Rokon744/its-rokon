@@ -49,7 +49,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden grid-overlay"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden grid-overlay pt-20"
     >
       {/* Ambient blobs */}
       <div className="absolute inset-0 pointer-events-none">
@@ -136,7 +136,7 @@ export default function Hero() {
 
         {/* Main headline */}
         <h1
-          className="font-display text-5xl sm:text-7xl lg:text-8xl font-800 leading-none mb-6"
+          className="font-display text-3xl sm:text-7xl lg:text-8xl font-800 leading-none mb-6"
           style={{ letterSpacing: "-0.03em" }}
         >
           <span className="block text-white">Building</span>
@@ -223,7 +223,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-2 opacity-40">
         <span className="font-mono text-xs" style={{ color: "var(--cyan)" }}>
           SCROLL
         </span>

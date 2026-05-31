@@ -52,7 +52,7 @@ const PROJECTS = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 px-6">
+    <section id="projects" className="pt-20 px-6">
       <div className="max-w-6xl mx-auto">
         <SectionHeader
           label="FEATURED WORK"

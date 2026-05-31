@@ -24,7 +24,7 @@ export function About() {
   };
 
   return (
-    <section className="relative min-h-[80vh] flex items-center pt-28 pb-20 overflow-hidden">
+    <section className="relative flex items-center pt-10 sm:pb-20 overflow-hidden">
 
       {/* ── ambient blobs ── */}
       <div className="absolute inset-0 pointer-events-none">
@@ -35,7 +35,7 @@ export function About() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
-        <div className="grid lg:grid-cols-[1fr_360px] gap-16 items-center">
+        <div className="grid lg:grid-cols-[1fr_360px] gap-8 sm:gap-16 items-center">
 
           {/* ── LEFT: Text content ── */}
           <div>
@@ -85,7 +85,8 @@ export function About() {
             <div className="flex flex-wrap gap-4">
 
               <a
-                href="/src/assets/md-rokon-resume.pdf"
+                href={"/resume.pdf"}
+                target="_blank"
                 className="inline-flex items-center gap-2 font-body font-semibold text-sm"
                 style={{
                   padding: "12px 24px",
@@ -115,7 +116,7 @@ export function About() {
             <div className="flex flex-wrap gap-3 mt-8">
               {[
                 { n: "3+", l: "Years Exp." },
-                { n: "10+", l: "Projects" },
+                { n: "70+", l: "Projects" },
                 { n: "100%", l: "Passion" },
               ].map(({ n, l }) => (
                 <div key={l}
@@ -132,7 +133,7 @@ export function About() {
           <div
             ref={cardRef}
             onMouseMove={onMouseMove}
-            className="glass card-glow rounded-2xl p-8 relative"
+            className="glass card-glow rounded-2xl p-4 sm:p-8 relative"
             style={{ position: "relative" }}
           >
             {/* Glow spot */}

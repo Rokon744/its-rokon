@@ -37,7 +37,7 @@ const TIMELINE = [
 
 export default function Journey() {
   return (
-    <section id="journey" className="py-24 px-6">
+    <section id="journey" className="pt-20 px-6">
       <div className="max-w-4xl mx-auto">
         <SectionHeader
           label="TIMELINE"
@@ -55,9 +55,9 @@ export default function Journey() {
             }}
           />
 
-          <div className="space-y-10">
+          <div className="space-y-6 sm:space-y-10">
             {TIMELINE.map((item, i) => (
-              <div key={i} className="relative flex gap-6 group">
+              <div key={i} className="relative flex gap-0 sm:gap-6 group">
                 {/* Dot */}
                 <div className="relative flex-shrink-0 w-12 flex justify-center">
                   <div

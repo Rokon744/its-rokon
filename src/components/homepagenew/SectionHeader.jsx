@@ -8,7 +8,7 @@ export default function SectionHeader({ label, title, sub }) {
         <CircuitBoard size={10} /> {label}
       </div>
       <h2
-        className="font-display font-bold text-white mb-3"
+        className="font-display font-bold text-white mb-3 max-sm:leading-8"
         style={{
           fontSize: "clamp(1.8rem, 4vw, 2.8rem)",
           letterSpacing: "-0.02em",

@@ -55,7 +55,7 @@ export default function ReviewSlider() {
   const review = REVIEWS[active];
 
   return (
-    <section className="py-24 px-6">
+    <section className="pt-20 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
@@ -214,7 +214,7 @@ export default function ReviewSlider() {
           {/* ── Right: Active review card ── */}
           <div
             key={active}
-            className="glass card-glow rounded-2xl p-8 relative overflow-hidden"
+            className="glass card-glow rounded-2xl p-4 sm:p-8 relative overflow-hidden"
             style={{
               border: `1px solid ${review.accent}25`,
               animation: "fadeSlideIn 0.4s ease",
@@ -258,7 +258,7 @@ export default function ReviewSlider() {
 
             {/* Review text */}
             <blockquote
-              className="font-body text-lg md:text-xl leading-relaxed mb-8 relative z-10"
+              className="font-body text-sm md:text-xl leading-relaxed mb-8 relative z-10"
               style={{
                 color: "rgba(255,255,255,0.8)",
                 fontStyle: "italic",

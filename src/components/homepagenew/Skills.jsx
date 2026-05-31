@@ -1,10 +1,22 @@
-'use client'
+"use client";
 
-import { Cpu, Database, Globe, Lock, MonitorSmartphone, Server, Shield, Trophy, Zap } from "lucide-react";
+import {
+  Cpu,
+  Database,
+  Globe,
+  Lock,
+  MonitorSmartphone,
+  Server,
+  Shield,
+  Trophy,
+  Zap,
+  Palette,
+  Video,
+  Wrench
+} from "lucide-react";
 import SectionHeader from "./SectionHeader";
 import SkillBar from "./SkillBar";
 import BentoCard from "./BentoCard";
-
 
 const SKILLS = [
   { key: "ts", label: "TypeScript", pct: 92 },
@@ -17,7 +29,7 @@ const SKILLS = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 px-6">
+    <section id="skills" className="pt-20 px-6">
       <div className="max-w-6xl mx-auto">
         <SectionHeader
           label="CAPABILITIES"
@@ -266,6 +278,290 @@ export default function Skills() {
                     >
                       {l}
                     </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </BentoCard>
+
+          {/* Graphic Design block */}
+          <BentoCard>
+            <div className="flex items-center gap-3 mb-4 relative z-10">
+              <div
+                className="p-2 rounded-xl"
+                style={{ background: "rgba(236,72,153,0.1)" }}
+              >
+                <Palette size={18} style={{ color: "#f472b6" }} />
+              </div>
+              <div>
+                <h3 className="font-display text-white font-bold text-sm">
+                  Graphic Design
+                </h3>
+                <p
+                  className="font-mono text-xs"
+                  style={{ color: "rgba(255,255,255,0.35)" }}
+                >
+                  PS · Illustrator · Canva
+                </p>
+              </div>
+            </div>
+            <div className="relative z-10 space-y-3 mb-4">
+              {[
+                { label: "Adobe Photoshop", pct: 72 },
+                { label: "Adobe Illustrator", pct: 65 },
+                { label: "Canva", pct: 90 },
+              ].map((s, i) => (
+                <SkillBar
+                  key={s.label}
+                  {...s}
+                  pctKey={s.label}
+                  delay={i * 120}
+                />
+              ))}
+            </div>
+            <div className="flex flex-wrap gap-2 relative z-10">
+              {["UI Assets", "Thumbnails", "Branding", "Posters"].map((t) => (
+                <span
+                  key={t}
+                  className="font-mono px-2 py-0.5 rounded text-xs"
+                  style={{
+                    background: "rgba(236,72,153,0.1)",
+                    border: "1px solid rgba(236,72,153,0.25)",
+                    color: "#f472b6",
+                    fontSize: "0.62rem",
+                  }}
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+          </BentoCard>
+
+          {/* Video Editing block */}
+          <BentoCard>
+            <div className="flex items-center gap-3 mb-4 relative z-10">
+              <div
+                className="p-2 rounded-xl"
+                style={{ background: "rgba(251,146,60,0.1)" }}
+              >
+                <Video size={18} style={{ color: "#fb923c" }} />
+              </div>
+              <div>
+                <h3 className="font-display text-white font-bold text-sm">
+                  Video Editing
+                </h3>
+                <p
+                  className="font-mono text-xs"
+                  style={{ color: "rgba(255,255,255,0.35)" }}
+                >
+                  CapCut · YouTube Content
+                </p>
+              </div>
+            </div>
+            <div className="relative z-10 space-y-2 mb-4">
+              {[
+                { label: "CapCut Editing", status: "Intermediate" },
+                { label: "Thumbnail Design", status: "Proficient" },
+                { label: "YouTube Workflow", status: "Active" },
+              ].map(({ label, status }) => (
+                <div
+                  key={label}
+                  className="flex items-center justify-between py-1.5 border-b"
+                  style={{ borderColor: "rgba(255,255,255,0.06)" }}
+                >
+                  <span
+                    className="font-body text-xs"
+                    style={{ color: "rgba(255,255,255,0.55)" }}
+                  >
+                    {label}
+                  </span>
+                  <span
+                    className="font-mono px-2 py-0.5 rounded text-xs"
+                    style={{
+                      background: "rgba(251,146,60,0.1)",
+                      border: "1px solid rgba(251,146,60,0.25)",
+                      color: "#fb923c",
+                      fontSize: "0.58rem",
+                    }}
+                  >
+                    {status}
+                  </span>
+                </div>
+              ))}
+            </div>
+            <div className="flex flex-wrap gap-2 relative z-10">
+              {[
+                "🎬 CapCut",
+                "▶️ YouTube",
+                "✂️ Cuts & Edits",
+                "🎵 Audio Sync",
+              ].map((t) => (
+                <span
+                  key={t}
+                  className="font-mono px-2 py-0.5 rounded text-xs"
+                  style={{
+                    background: "rgba(251,146,60,0.08)",
+                    border: "1px solid rgba(251,146,60,0.2)",
+                    color: "#fb923c",
+                    fontSize: "0.62rem",
+                  }}
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+          </BentoCard>
+
+          {/* Tools & Workflow block */}
+          <BentoCard col2 className="lg:col-span-2">
+            <div className="flex items-center gap-3 mb-5 relative z-10">
+              <div
+                className="p-2 rounded-xl"
+                style={{ background: "rgba(251,191,36,0.1)" }}
+              >
+                <Wrench size={18} style={{ color: "#fbbf24" }} />
+              </div>
+              <div>
+                <h3 className="font-display text-white font-bold text-sm">
+                  Tools & Workflow
+                </h3>
+                <p
+                  className="font-mono text-xs"
+                  style={{ color: "rgba(255,255,255,0.35)" }}
+                >
+                  Daily dev environment & productivity stack
+                </p>
+              </div>
+            </div>
+
+            <div className="relative z-10 grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {[
+                {
+                  name: "VS Code",
+                  icon: "🖥️",
+                  label: "Primary IDE",
+                  accent: "#3b82f6",
+                },
+                {
+                  name: "Git",
+                  icon: "🌿",
+                  label: "Version Control",
+                  accent: "#f97316",
+                },
+                {
+                  name: "GitHub",
+                  icon: "🐙",
+                  label: "Remote Repos",
+                  accent: "#a5b4fc",
+                },
+                {
+                  name: "Postman",
+                  icon: "📮",
+                  label: "API Testing",
+                  accent: "#f59e0b",
+                },
+                {
+                  name: "Figma",
+                  icon: "🎨",
+                  label: "UI Design",
+                  accent: "#ec4899",
+                },
+                {
+                  name: "Vercel",
+                  icon: "▲",
+                  label: "Deployment",
+                  accent: "#ffffff",
+                },
+                {
+                  name: "MongoDB Compass",
+                  icon: "🍃",
+                  label: "DB GUI",
+                  accent: "#4ade80",
+                },
+                {
+                  name: "ChatGPT",
+                  icon: "🤖",
+                  label: "AI Assistant",
+                  accent: "#00f5d4",
+                },
+              ].map(({ name, icon, label, accent }) => (
+                <div
+                  key={name}
+                  className="flex flex-col items-center gap-2 p-3 rounded-xl transition-all duration-200 group cursor-default"
+                  style={{
+                    background: "rgba(255,255,255,0.02)",
+                    border: "1px solid rgba(255,255,255,0.06)",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.background = `${accent}0d`;
+                    e.currentTarget.style.borderColor = `${accent}35`;
+                    e.currentTarget.style.transform = "translateY(-3px)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.background = "rgba(255,255,255,0.02)";
+                    e.currentTarget.style.borderColor =
+                      "rgba(255,255,255,0.06)";
+                    e.currentTarget.style.transform = "translateY(0)";
+                  }}
+                >
+                  <span className="text-2xl">{icon}</span>
+                  <div className="text-center">
+                    <div className="font-display font-bold text-white text-xs leading-tight">
+                      {name}
+                    </div>
+                    <div
+                      className="font-mono mt-0.5"
+                      style={{ color: accent, fontSize: "0.55rem" }}
+                    >
+                      {label}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Workflow pipeline */}
+            <div
+              className="relative z-10 mt-5 pt-4"
+              style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}
+            >
+              <p
+                className="font-mono text-xs mb-3"
+                style={{ color: "rgba(255,255,255,0.25)", fontSize: "0.6rem" }}
+              >
+                TYPICAL WORKFLOW
+              </p>
+              <div className="flex items-center gap-1 flex-wrap">
+                {[
+                  { step: "Plan", color: "#6366f1" },
+                  { step: "Design", color: "#ec4899" },
+                  { step: "Code", color: "#00f5d4" },
+                  { step: "Test", color: "#f59e0b" },
+                  { step: "Deploy", color: "#4ade80" },
+                  { step: "Monitor", color: "#3b82f6" },
+                ].map(({ step, color }, i, arr) => (
+                  <div key={step} className="flex items-center gap-1">
+                    <span
+                      className="font-mono text-xs px-3 py-1 rounded-full"
+                      style={{
+                        background: `${color}15`,
+                        border: `1px solid ${color}35`,
+                        color: color,
+                        fontSize: "0.65rem",
+                      }}
+                    >
+                      {step}
+                    </span>
+                    {i < arr.length - 1 && (
+                      <span
+                        style={{
+                          color: "rgba(255,255,255,0.15)",
+                          fontSize: "0.7rem",
+                        }}
+                      >
+                        →
+                      </span>
+                    )}
                   </div>
                 ))}
               </div>

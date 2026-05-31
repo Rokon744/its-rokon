@@ -29,13 +29,14 @@ export default function Footer() {
         </div>
         <div className="flex items-center gap-4">
           {[
-            { Icon: Github, href: "#" },
-            { Icon: Linkedin, href: "#" },
-            { Icon: Mail, href: "#" },
+            { Icon: Github, href: "https://github.com/Rokon744" },
+            { Icon: Linkedin, href: "https://www.linkedin.com/in/dev-rokon/" },
+            { Icon: Mail, href: "malito:roknujjamanripon@gmail.com" },
           ].map(({ Icon, href }, i) => (
             <a
               key={i}
               href={href}
+              target="_blank"
               className="p-2 rounded-lg transition-all duration-200 text-white/30 hover:text-white/70 hover:bg-white/5"
             >
               <Icon size={15} />
@@ -46,7 +47,7 @@ export default function Footer() {
           className="font-mono text-xs"
           style={{ color: "rgba(255,255,255,0.2)", fontSize: "0.65rem" }}
         >
-          © 2025 Rokon · Built with React + Tailwind
+          © 2025 Rokon · Built with Next.js + Tailwind
         </div>
       </div>
     </footer>

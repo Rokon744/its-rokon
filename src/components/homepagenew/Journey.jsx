@@ -42,7 +42,7 @@ export default function Journey() {
         <SectionHeader
           label="TIMELINE"
           title="Engineering Journey"
-          sub="A chronicle of growth — from first commits to production-grade systems."
+          sub="A chronicle of growth from first commits to production-grade systems."
         />
 
         <div className="relative mt-16">

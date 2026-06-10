@@ -23,10 +23,14 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
 
+    // direct 4th parameter e string hisebe public key pass kora holo
     emailjs
-      .sendForm("service_ftci20m", "template_n9l9044", formRef.current, {
-        publicKey: "b-f3jDXDlBa5qxgz0",
-      })
+      .sendForm(
+        "service_ftci20m",
+        "template_n9l9044",
+        formRef.current,
+        "b-f3jDXDlBa5qxgz0",
+      )
       .then(() => {
         setSent(true);
         setLoading(false);
@@ -34,7 +38,8 @@ export default function Contact() {
         setTimeout(() => setSent(false), 7000);
       })
       .catch((err) => {
-        console.error("EmailJS error:", err);
+        // detail error dekhon
+        console.error("EmailJS error status:", err);
         setLoading(false);
       });
   };
@@ -62,21 +67,21 @@ export default function Contact() {
                     label: "Gmail",
                     value: "roknujjamanripon@gmail.com",
                     accent: "#00f5d4",
-                    href: 'malito:roknujjamanripon@gmail.com'
+                    href: "malito:roknujjamanripon@gmail.com",
                   },
                   {
                     Icon: Github,
                     label: "GitHub",
                     value: "github.com/Rokon744",
                     accent: "#a5b4fc",
-                    href: 'https://github.com/Rokon744'
+                    href: "https://github.com/Rokon744",
                   },
                   {
                     Icon: Linkedin,
                     label: "LinkedIn",
                     value: "linkedin.com/in/dev-rokon",
                     accent: "#60a5fa",
-                    href: 'https://www.linkedin.com/in/dev-rokon/'
+                    href: "https://www.linkedin.com/in/dev-rokon/",
                   },
                 ].map(({ Icon, label, value, accent, href }) => (
                   <a
@@ -172,7 +177,7 @@ export default function Contact() {
                   name="name"
                   required
                   className="form-input"
-                  placeholder="John Doe"
+                  placeholder="Your Name"
                 />
               </div>
               <div>
@@ -190,7 +195,7 @@ export default function Contact() {
                   type="email"
                   required
                   className="form-input"
-                  placeholder="john@company.com"
+                  placeholder="Your Email"
                 />
               </div>
               <div>

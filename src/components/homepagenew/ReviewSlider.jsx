@@ -13,7 +13,7 @@ const REVIEWS = [
     location: "Bulgaria",
     role: "Business Owner",
     review:
-      "One again — amazing work. I will surely continue working with the developer. The attention to detail and speed of delivery was outstanding. Exactly what I envisioned.",
+      "One again amazing work. I will surely continue working with the developer. The attention to detail and speed of delivery was outstanding. Exactly what I envisioned.",
     image: nicky,
     rating: 5,
     project: "Web Application",
@@ -92,7 +92,7 @@ export default function ReviewSlider() {
             className="font-body text-sm max-w-md mx-auto"
             style={{ color: "rgba(255,255,255,0.4)", lineHeight: 1.7 }}
           >
-            Real feedback from real clients — delivering quality that speaks for
+            Real feedback from real clients delivering quality that speaks for
             itself.
           </p>
         </div>

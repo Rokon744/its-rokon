@@ -63,7 +63,7 @@ export default function Projects() {
         <SectionHeader
           label="FEATURED WORK"
           title="Projects Showcase"
-          sub="Production applications built with precision — from payment systems to real-time sports data."
+          sub="Production applications built with precision from payment systems to real-time sports data."
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
           {PROJECTS.map((p, i) => (

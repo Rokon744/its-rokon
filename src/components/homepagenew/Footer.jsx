@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Github, Phone, Facebook } from "lucide-react";
 
 /* ─── Footer ─── */
 export default function Footer() {
@@ -30,7 +30,9 @@ export default function Footer() {
         <div className="flex items-center gap-4">
           {[
             { Icon: Github, href: "https://github.com/Rokon744" },
-            { Icon: Linkedin, href: "https://www.linkedin.com/in/dev-rokon/" },
+            // { Icon: Linkedin, href: "https://www.linkedin.com/in/dev-rokon/" },
+            { Icon: Phone, href: "https://wa.me/8801890011744" },
+            { Icon: Facebook, href: "https://facebook.com/devrokon" },
             { Icon: Mail, href: "malito:roknujjamanripon@gmail.com" },
           ].map(({ Icon, href }, i) => (
             <a

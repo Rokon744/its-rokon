@@ -11,6 +11,8 @@ import {
   Lock,
   Star,
   Loader,
+  Phone,
+  Facebook,
 } from "lucide-react";
 
 /* ─── Contact ─── */
@@ -76,12 +78,26 @@ export default function Contact() {
                     accent: "#a5b4fc",
                     href: "https://github.com/Rokon744",
                   },
+                  // {
+                  //   Icon: Linkedin,
+                  //   label: "LinkedIn",
+                  //   value: "linkedin.com/in/dev-rokon",
+                  //   accent: "#60a5fa",
+                  //   href: "https://www.linkedin.com/in/dev-rokon/",
+                  // },
                   {
-                    Icon: Linkedin,
-                    label: "LinkedIn",
-                    value: "linkedin.com/in/dev-rokon",
-                    accent: "#60a5fa",
-                    href: "https://www.linkedin.com/in/dev-rokon/",
+                    Icon: Phone, // Whatsapp er jonno Lucide er Phone icon
+                    label: "WhatsApp",
+                    value: "+8801890011744", // Apnar number ti ekhane din
+                    accent: "#25D366", // Whatsapp green color code
+                    href: "https://wa.me/8801890011744", // wa.me link use korun target redirection er jonno
+                  },
+                  {
+                    Icon: Facebook, // Facebook icon
+                    label: "Facebook",
+                    value: "facebook.com/DevRokon", // Apnar fb user id ekhane din
+                    accent: "#1877F2", // Facebook blue color code
+                    href: "https://facebook.com/devrokon",
                   },
                 ].map(({ Icon, label, value, accent, href }) => (
                   <a

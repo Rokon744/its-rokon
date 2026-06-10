@@ -8,7 +8,7 @@ import Particle from "./Particle";
 const ROLES = [
   "Full-Stack Developer",
   "Software Engineer",
-  "DSA Enthusiast",
+  "Graphic Designer",
   "Cricket Captain",
 ];
 
@@ -170,9 +170,9 @@ export default function Hero() {
           className="font-body text-base sm:text-lg max-w-xl mx-auto mb-10"
           style={{ color: "rgba(255,255,255,0.4)", lineHeight: 1.7 }}
         >
-          Hi, I&apos;m <strong className="text-white">Rokon</strong> — a full-stack
+          Hi, I&apos;m <strong className="text-white">Rokon</strong>, a full-stack
           engineer crafting high-performance web applications with React,
-          Next.js & Node.js from Bangladesh.
+          Next.js & PHP, Laravel from Bangladesh.
         </p>
 
         {/* CTAs */}
@@ -207,9 +207,9 @@ export default function Hero() {
             "React",
             "Next.js",
             "TypeScript",
-            "Node.js",
-            "MongoDB",
-            "Firebase",
+            "PHP",
+            "MySQL",
+            "Laravel",
           ].map((t) => (
             <span
               key={t}
@@ -220,20 +220,6 @@ export default function Hero() {
             </span>
           ))}
         </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-2 opacity-40">
-        <span className="font-mono text-xs" style={{ color: "var(--cyan)" }}>
-          SCROLL
-        </span>
-        <div
-          className="w-px h-12"
-          style={{
-            background: "linear-gradient(to bottom, var(--cyan), transparent)",
-            animation: "float 2s ease-in-out infinite",
-          }}
-        />
       </div>
     </section>
   );

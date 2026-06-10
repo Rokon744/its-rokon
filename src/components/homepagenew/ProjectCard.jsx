@@ -1,12 +1,17 @@
-'use client'
-import { BookOpen, LayoutDashboard, ExternalLink, Activity } from "lucide-react";
+"use client";
+import {
+  LayoutDashboard,
+  ExternalLink,
+  Activity,
+  ShoppingBag,
+} from "lucide-react";
 import { useRef } from "react";
-
+import Link from "next/link";
 
 /* ─── Projects ─── */
 const PROJECT_ICONS = {
   LayoutDashboard,
-  BookOpen,
+  ShoppingBag,
   Activity,
 };
 
@@ -56,12 +61,14 @@ export default function ProjectCard({ project, index }) {
             </h3>
           </div>
         </div>
-        <button
+        <Link
+          href={project.href}
+          target="_blank"
           className="p-2 rounded-lg hover:bg-white/5 transition-colors"
           style={{ color: "rgba(255,255,255,0.3)" }}
         >
           <ExternalLink size={15} />
-        </button>
+        </Link>
       </div>
 
       <p

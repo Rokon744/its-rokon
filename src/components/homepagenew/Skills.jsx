@@ -22,9 +22,9 @@ const SKILLS = [
   { key: "ts", label: "TypeScript", pct: 92 },
   { key: "react", label: "React / Next.js", pct: 95 },
   { key: "node", label: "Node.js", pct: 85 },
-  { key: "mongo", label: "MongoDB", pct: 82 },
-  { key: "dsa", label: "DSA / Algorithms", pct: 78 },
-  { key: "firebase", label: "Firebase", pct: 80 },
+  { key: "PHP", label: "PHP", pct: 82 },
+  { key: "Laravel", label: "Laravel", pct: 60 },
+  { key: "MySQL", label: "MySQL", pct: 80 },
 ];
 
 export default function Skills() {
@@ -96,7 +96,7 @@ export default function Skills() {
                   className="font-mono text-xs"
                   style={{ color: "rgba(255,255,255,0.35)" }}
                 >
-                  Node · Mongo · Firebase
+                  PHP · Laravel · MySql
                 </p>
               </div>
             </div>
@@ -107,10 +107,10 @@ export default function Skills() {
             </div>
             <div className="grid grid-cols-2 gap-2 mt-4 relative z-10">
               {[
-                { Icon: Database, label: "MongoDB Atlas" },
-                { Icon: Zap, label: "Firebase RT" },
-                { Icon: Globe, label: "REST APIs" },
-                { Icon: Lock, label: "SSLCommerz" },
+                { Icon: Database, label: "PHP" },
+                { Icon: Zap, label: "Laravel" },
+                { Icon: Globe, label: "MySQL" },
+                { Icon: Lock, label: "MongoDB" },
               ].map(({ Icon, label }) => (
                 <div
                   key={label}
